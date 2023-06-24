@@ -1,16 +1,9 @@
-export const App = () => {
+import { GaleryList } from "./GaleryList/GaleryList";
+
+export const App = ({galery}) => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <GaleryList  galery={galery} />
     </div>
   );
 };
